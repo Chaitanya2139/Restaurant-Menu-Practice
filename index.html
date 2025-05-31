@@ -20,26 +20,43 @@
     <p class="tagline">Taste the Magic, Savor the Moments</p>
   </header>
 
+  <!-- Category Filter -->
+  <div class="filter-container">
+    <label for="categoryFilter">Filter by Category:</label>
+    <div class="custom-dropdown">
+      <button class="dropdown-btn">All</button>
+      <ul class="dropdown-menu">
+        <li data-value="all">All</li>
+        <li data-value="indian">Indian</li>
+        <li data-value="italian">Italian</li>
+      </ul>
+    </div>
+  </div>
+
   <!-- Menu Section -->
   <section id="menu">
     <h2>Our Menu</h2>
     <div class="menu-category">
       <h3>Starters</h3>
       <div class="menu-list">
-        <div class="menu-card">
-          <img src="source/bruschetta.png" alt="Bruschetta">
-          <div class="menu-info">
-            <h4>Bruschetta <span class="badge">Recommended</span></h4>
-            <p>Grilled bread topped with fresh tomatoes, garlic, and basil.</p>
-            <span class="price">₹180</span>
+        <div class="menu-item" data-category="italian">
+          <div class="menu-card">
+            <img src="source/bruschetta.png" alt="Bruschetta">
+            <div class="menu-info">
+              <h4>Bruschetta <span class="badge">Recommended</span></h4>
+              <p>Grilled bread topped with fresh tomatoes, garlic, and basil.</p>
+              <span class="price">₹180</span>
+            </div>
           </div>
         </div>
-        <div class="menu-card">
-          <img src="source/soup.png" alt="Tomato Soup">
-          <div class="menu-info">
-            <h4>Tomato Soup</h4>
-            <p>Creamy tomato soup served with croutons.</p>
-            <span class="price">₹120</span>
+        <div class="menu-item" data-category="indian">
+          <div class="menu-card">
+            <img src="source/soup.png" alt="Tomato Soup">
+            <div class="menu-info">
+              <h4>Tomato Soup</h4>
+              <p>Creamy tomato soup served with croutons.</p>
+              <span class="price">₹120</span>
+            </div>
           </div>
         </div>
       </div>
@@ -47,20 +64,24 @@
     <div class="menu-category">
       <h3>Main Course</h3>
       <div class="menu-list">
-        <div class="menu-card">
-          <img src="source/pasta.png" alt="Pasta Alfredo">
-          <div class="menu-info">
-            <h4>Pasta Alfredo <span class="badge">Recommended</span></h4>
-            <p>Classic creamy Alfredo pasta with parmesan and herbs.</p>
-            <span class="price">₹320</span>
+        <div class="menu-item" data-category="italian">
+          <div class="menu-card">
+            <img src="source/pasta.png" alt="Pasta Alfredo">
+            <div class="menu-info">
+              <h4>Pasta Alfredo <span class="badge">Recommended</span></h4>
+              <p>Classic creamy Alfredo pasta with parmesan and herbs.</p>
+              <span class="price">₹320</span>
+            </div>
           </div>
         </div>
-        <div class="menu-card">
-          <img src="source/pizza.png" alt="Margherita Pizza">
-          <div class="menu-info">
-            <h4>Margherita Pizza</h4>
-            <p>Wood-fired pizza with mozzarella, tomato, and basil.</p>
-            <span class="price">₹350</span>
+        <div class="menu-item" data-category="italian">
+          <div class="menu-card">
+            <img src="source/pizza.png" alt="Margherita Pizza">
+            <div class="menu-info">
+              <h4>Margherita Pizza</h4>
+              <p>Wood-fired pizza with mozzarella, tomato, and basil.</p>
+              <span class="price">₹350</span>
+            </div>
           </div>
         </div>
       </div>
@@ -68,20 +89,24 @@
     <div class="menu-category">
       <h3>Desserts</h3>
       <div class="menu-list">
-        <div class="menu-card">
-          <img src="source/tiramisu.png" alt="Tiramisu">
-          <div class="menu-info">
-            <h4>Tiramisu <span class="badge">Recommended</span></h4>
-            <p>Classic Italian dessert with coffee-soaked ladyfingers and mascarpone.</p>
-            <span class="price">₹180</span>
+        <div class="menu-item" data-category="italian">
+          <div class="menu-card">
+            <img src="source/tiramisu.png" alt="Tiramisu">
+            <div class="menu-info">
+              <h4>Tiramisu <span class="badge">Recommended</span></h4>
+              <p>Classic Italian dessert with coffee-soaked ladyfingers and mascarpone.</p>
+              <span class="price">₹180</span>
+            </div>
           </div>
         </div>
-        <div class="menu-card">
-          <img src="source/icecream.png" alt="Gelato">
-          <div class="menu-info">
-            <h4>Gelato</h4>
-            <p>Rich and creamy Italian ice cream, assorted flavors.</p>
-            <span class="price">₹120</span>
+        <div class="menu-item" data-category="italian">
+          <div class="menu-card">
+            <img src="source/icecream.png" alt="Gelato">
+            <div class="menu-info">
+              <h4>Gelato</h4>
+              <p>Rich and creamy Italian ice cream, assorted flavors.</p>
+              <span class="price">₹120</span>
+            </div>
           </div>
         </div>
       </div>
@@ -114,4 +139,5 @@
       <p>&copy; 2023 Delizia Restaurant. All rights reserved.</p>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
